@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/menu">
+
+    <fragment
+        android:id="@+id/about"
+        android:name="org.d3ifcool.praassessment.About"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/persegiPanjang"
+        android:name="org.d3ifcool.praassessment.persegiPanjang"
+        android:label="fragment_persegi_panjang"
+        tools:layout="@layout/fragment_persegi_panjang" />
+    <fragment
+        android:id="@+id/segitigaSiku2"
+        android:name="org.d3ifcool.praassessment.segitigaSiku2"
+        android:label="fragment_segitiga_siku2"
+        tools:layout="@layout/fragment_segitiga_siku2" />
+    <fragment
+        android:id="@+id/menu"
+        android:name="org.d3ifcool.praassessment.Menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menu_to_segitigaSiku2"
+            app:destination="@id/segitigaSiku2" />
+        <action
+            android:id="@+id/action_menu_to_persegiPanjang"
+            app:destination="@id/persegiPanjang" />
+    </fragment>
+</navigation>

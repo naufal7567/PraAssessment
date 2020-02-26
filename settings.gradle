@@ -1,0 +1,2 @@
+rootProject.name='praAssessment'
+include ':app'
